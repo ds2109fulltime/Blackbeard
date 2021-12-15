@@ -23,8 +23,9 @@ In the following paragraphs, we are going to describe how you can use Blackbeard
 ##  Getting it
 To download Blackbeard, either fork this github repo or simply use Pypi via pip.
 ```sh
-$ pip install BLACKBEARD_ds2109
+pip install blackbeard2109
 ```
+
 ## Using it
 Blackbeard was programmed with ease-of-use in mind. First, import Blackbeard and then call any of the functions based on your needs.
 
