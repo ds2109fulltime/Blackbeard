@@ -30,11 +30,7 @@ def get_root_path(n):
     print(path)
     sys.path.append(path)
 
-get_root_path(n=1)
 
-"""
-Delete duplicated values in pandas Dataframe
-"""
 #
 #Body of the function:
 #
