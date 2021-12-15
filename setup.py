@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'Blackbeard',         
-  packages = ['BLACKBEARD'],   
+  name = 'blackbeard_ds2109',         
+  packages = ['blackbeard_ds2109'],   
   version = '0.1',    
   license='MIT',        
   description = '''This library is designed for people who need to optimize time in an agile way with an ease of understanding and could 
@@ -9,7 +9,7 @@ setup(
   author = 'DS2109FULLTIME',                   
   author_email = 'datascience2109thebridge@gmail.com',     
   url = 'https://github.com/ds2109fulltime/Blackbeard',   
-  download_url = 'https://github.com/ds2109fulltime/Blackbeard/dist/blackbeard_01.tar.gz',    
+  download_url = 'https://github.com/ds2109fulltime/Blackbeard/dist/blackbeard_ds2109-0.1.tar.gz',    
   keywords = ['machinelearning', 'scrum', 'datascience'],  
   install_requires=[            
           'tensorflow','xgboost','imageio','utllib','matplotlib','seaborn','scipy','requests','sys','collections',
