@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
   name = 'blackbeard2109',         
-  version = '0.2.1',    
+  version = '0.2.2',    
   author = 'The Bridge Data Science Team 2109',                   
   author_email = 'datascience2109thebridge@gmail.com',
   description = '''This library is designed for people who need to optimize time in an agile way with an ease of understanding and could 
@@ -20,5 +20,21 @@ setuptools.setup(
   ],
   package_dir={"": "src"},
   packages=setuptools.find_packages(where="src"),
+  install_requires=[
+    'pandas',
+    'numpy',
+    'opencv-python',
+    'scikit-learn',
+    'imageio',
+    'folium',
+    'plotly',
+    'scipy',
+    'IPython',
+    'matplotlib',
+    'seaborn',
+    'tensorflow',
+    'xgboost',
+    'mljar-supervised'
+  ],
   python_requires=">=3.6",
 )
