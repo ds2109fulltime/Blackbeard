@@ -805,14 +805,18 @@ Images_load_data
 #
 def images_load_data(path_in):
     '''
-    This function loads the images from a list of specific locations and assigns them to the variables 'images' and 'labels', 
-    so that it returns the 'train' and the 'tests' of each of them in different variables.
-    The return would be (X_train, y_train), (X_test, y_test).
+    This function loads the images from a list of specific locations and assigns them to the variables 'images' and 'labels', so that it returns
+    the 'train' and the 'tests' of each of them in different variables. The return would be (X_train, y_train), (X_test, y_test).
     For this to work, the folders must be organized as follows:
-        for the train: '../ubication/train_images/' and inside will be the images of each class divided into folders, for example: buildings, forest, mountain, beach.
-        for the test: '../ubication/test_images/' and inside will be the images of each class divided into folders, for example: buildings, forest, mountain, beach.
-    Params:
-    - path_In: List with all locations, It is an iterable.
+
+        for the train: '../location/train_images' and inside will be the folders with images of each class, divided into those folders, for example: buildings, forest, mountain, beach
+        for the test: '../location/test_images' and inside will be the folders with images of each class, divided into those folders, for example: buildings, forest, mountain, beach
+
+    Function call example:
+        (train_images, train_labels), (test_images, test_labels) = load_data (pathIn = [r '.... \ images \ train_images', r '.... \ images \ test_images'])
+
+    Variables:
+    - path_in: List with all locations. It is an iterable
     '''
     class_names = os.listdir(path_in[0])
     class_names_label = {class_name:i for i, class_name in enumerate(class_names)}
