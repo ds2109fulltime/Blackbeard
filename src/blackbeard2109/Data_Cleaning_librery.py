@@ -850,8 +850,13 @@ def images_load_data(path_in):
                 images.append(image)
                 labels.append(label)
                 
-        images = np.array(images, dtype = 'float32')
-        labels = np.array(labels, dtype = 'int32')   
+        try:
+            images = np.array(images, 'float32')
+            labels = np.array(labels, 'int32')
+        
+        except:
+            images = np.array(images)
+            labels = np.array(labels)   
         
         output.append((images, labels))
 
